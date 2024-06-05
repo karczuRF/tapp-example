@@ -2,7 +2,6 @@
   "name": "tapp-example",
   "version": "1.0.2",
   "description": "Tapplet example",
-  "main": "dist/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc --project tsconfig.build.json",
@@ -15,11 +14,21 @@
     "url": "git+https://github.com/karczuRF/tapp-example.git"
   },
   "dependencies": {
+    "@types/node": "^20.14.2",
+    "dotenv": "^16.4.5",
+    "octokit": "^4.0.2",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.11.2",
     "typescript": "^5.4.5"
   },
+  "exports": "./index.js",
   "files": [
     "./dist",
     "./README.md",
     "./tapplet.manifest.json"
-  ]
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  }
 }
