@@ -1,12 +1,12 @@
 {
   "name": "tapp-example",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Tapplet example",
   "main": "dist/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc --project tsconfig.build.json",
-    "checksum": "npm pack && shasum -b -a 512 ./tapp-example-1.0.1.tgz | awk '{print $1}' | xxd -r -p | base64 && rm ./tapp-example-1.0.1.tgz"
+    "checksum": "npm pack && shasum -b -a 512 ./tapp-example-1.0.3.tgz | awk '{print $1}' | xxd -r -p | base64 && rm ./tapp-example-1.0.3.tgz"
   },
   "author": "",
   "license": "ISC",
